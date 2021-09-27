@@ -41,7 +41,7 @@ def remove_and_update_potential_guesses(remaining_alphabet, players_guess):
     for letter in lst1:
         if players_guess == letter:
             lst1.remove(letter)
-            # added a break here as it will just continue to iterate over the list even if found - PL 09/06/21
+            # added a break here as it will just continue to iterate over the list even if found
             break
     return lst1
 
@@ -125,7 +125,7 @@ while game_on:
 
     print(f'You have {player_lives} guesses remaining!')
     print(convert_list_to_string(out_list))
-    # validate user input. Added by PL 09/06/21
+    # validate user input
     while True:
         try:
             player_guess = input('Please enter your next guess: ')
